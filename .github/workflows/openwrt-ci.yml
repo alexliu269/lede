@@ -105,15 +105,10 @@ jobs:
           # 
           
           # 编译x64固件:
-          # cat >> .config <<EOF
-          # CONFIG_TARGET_x86=y
-          # CONFIG_TARGET_x86_64=y
-          # CONFIG_TARGET_x86_64_Generic=y
           cat >> .config <<EOF
-          CONFIG_TARGET_MT7621=y
-          CONFIG_TARGET_MT7621_64=y
-          CONFIG_TARGET_MT7621_64_Generic=y
-          EOF
+          CONFIG_TARGET_x86=y
+          CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_x86_64_Generic=y
           
           # 固件压缩:
           cat >> .config <<EOF
